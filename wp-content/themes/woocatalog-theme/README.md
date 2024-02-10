@@ -1,31 +1,31 @@
-**WooCatalog Theme Engine for Wordpress and WooCommerce**
 
-Forked from https://github.com/LearnWebCode/brads-boilerplate-wordpress
-YouTube videos: https://www.youtube.com/watch?v=OP9ZxbqNe38&t=927s
 
-*TailwindCSS custom theme for WooCommerce engine*
+# TroveCreditStore
+Full-Stack Engineer Code Challenge: WooCommerce Digital Store with Firebase Tracking and Reporting
 
----
+> Live URL: https://trovecredit.vps103216.mylogin.co/ 
+> Admin URL: https://trovecredit.vps103216.mylogin.co/wp-login.php
 
-## Installation 
+    shop_manager / 7XH9AoHLWbY)kyxyAq7WEHSt
 
-Follow these steps:
+## Instructions
+1) Clone repo (it includes Wordpress) to your webserver. If needed run the search & replace database string with [WPCLI](https://developer.wordpress.org/cli/commands/search-replace/)
+2) Import database: `./database.sql`
+3) `cd ./wp-content/themes/woocatalog-theme/` 
+4) Use node.js v20 with `nvm use 20` and do `npm install && npm run build` 
+5) Enjoy
 
-1. Clone **WooCatalog** to wordpress theme's folder.
-2. Activate theme on Wordpress dashboard.
-3. **In terminal** go to theme folder and **install dependencies** with ==npm install== command.
-4. If your'e using WSL2 dont forget to set **localhost and domain.dev proxy to server ip** with ==$ sudo vim  /etc/hosts==
-5. **Flush DNS on linux** and npm run preview.
-6. Now your'e ready to ==$ npm run preview==
+> For development you must set your local URL on line 8 of package.json just change `trovecredit.vps103216.mylogin.co`
 
----
+## Documentation:
+I'm using one of my custom themes (woocatalog-theme) and tailor it to achieve the requirements.
 
-## Tune brand settings
+I've created the **WooCatalog Theme** a few months ago to learn **TailWindCSS** . I've implemented default woocommerce theme and made some adjustments using **hooks** (keep it simple and compatible with future updates). For mobile experience I adopted a sticky CTA similar to Storefront.
 
-Custom brand settings.
+**Notice that CMB2 plugin is required (just for theme settings).**
 
-1. **Favicon** @ /assets/favicon/ folder.
-2. **CSS and FONTS** @ /assets/css/ folder.
-3. **img folder**.
-4. **js** folder with vendors, plugins and main.js scripts.
-5. More assets.
+Firebase integrations are fully apart from wordpress, those are 2 simply node.js scripts configured with cron jobs and run everyday between 23:55 and 23:59.
+
+You can find those scripts `track_sales.js` and `automated_daily_sales_summary.js` inside of theme's folder. I used the official firebase npm packages.
+
+Thanks
