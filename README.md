@@ -1,3 +1,5 @@
+
+
 # TroveCreditStore
 Full-Stack Engineer Code Challenge: WooCommerce Digital Store with Firebase Tracking and Reporting
 
@@ -7,7 +9,7 @@ Full-Stack Engineer Code Challenge: WooCommerce Digital Store with Firebase Trac
     shop_manager / 7XH9AoHLWbY)kyxyAq7WEHSt
 
 ## Instructions
-1) Clone repo (it includes Wordpress) to your webserver
+1) Clone repo (it includes Wordpress) to your webserver. If needed run the search & replace database string with [WPCLI](https://developer.wordpress.org/cli/commands/search-replace/)
 2) Import database: `./database.sql`
 3) `cd ./wp-content/themes/woocatalog-theme/` 
 4) Use node.js v20 with `nvm use 20` and do `npm install && npm run build` 
