@@ -1,0 +1,1 @@
+<span class="inline-flex -ml-3 h-1 w-1 items-center justify-center rounded-full bg-red-500 p-2 text-xs text-white"><?php echo $args['item_count']; ?></span><br>
